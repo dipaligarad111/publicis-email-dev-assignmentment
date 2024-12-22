@@ -1,33 +1,113 @@
 <table class="w-full">
   <tr>
     <td>
-       <!-- Two-Column Section -->
-       <tr>
-        <td class="text-center py-6">
-          <h2 class="text-teal-600 text-xl font-semibold mb-4">
+      <!-- table header text -->
+      <table class="w-[600px] sm:w-[375px] bg-[#f0f5f5] text-center">
+        <tr>
+          <td class="w-[375px] text-[24px] font-sans font-bold leading-[28px] text-[#005555]  pt-[37px] ">
             Sint cupidatat occaecat ut
-          </h2>
-          <div class="flex flex-col md:flex-row justify-center gap-4 px-4">
-            <!-- Column 1 -->
-            <div class="bg-white p-4 rounded-lg text-center flex-1 shadow-md">
-              <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto"></div>
-              <h3 class="text-teal-600 font-bold mt-4">Nisi ut ade</h3>
-              <p class="text-gray-700 text-sm mt-2 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-            </div>
-            <!-- Column 2 -->
-            <div class="bg-white p-4 rounded-lg text-center flex-1 shadow-md">
-              <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto"></div>
-              <h3 class="text-teal-600 font-bold mt-4">Duis aute irure</h3>
-              <p class="text-gray-700 text-sm mt-2 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-            </div>
-          </div>
+          </td>
+        </tr>
+      </table> 
+      <!-- two column section desktop view  -->
+      <table class="w-[600px] h-[390px] sm:hidden bg-[#f0f5f5] text-center pb-[25px]">
+         <tr>
+          <!-- 1st colum -->
+           <th class="pl-3 text-left w-[270px]">
+             <table class="bg-white w-[270px] mx-auto">
+               <tr class="pb-[25px]">
+                  <td class="text-center pt-5  pb-[15px]">
+                   <x-image class="w-[100px] h-[100px]" imgUrl="roundIcon.png" href="#" />
+                 </td>
+                </tr>
+                <tr>
+                <td class="text-center text-[20px] font-sans font-bold leading-[23px] pb-[15px] w-[196px] text-[#005555]">
+                  Nisi ut ade
+                </td>
+                </tr>
+                <tr>
+                  <td class="text-center text-[16px] font-sans font-normal leading-[19px] pb-[25px] h-[116px] text-[#444444]">
+                    Lorem ipsum dolor sit amet,<br>  consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt <br> ut labore et dolore magna <br>aliqua. Ut enim ad minim <br> veniam.
+                    <sup class="text-[8px]">1</sup>
+                  </td>                  
+                </tr>
+          </table>
+          </th>
+          <!-- 2nd colum -->
+          <th class="w-[270px] pr-3 ">
+            <table class="bg-white w-[270px] mx-auto">
+              <tr>
+                <td class="text-center pt-5  pb-[15px]">
+                  <x-image class="w-[100px] h-[100px]" imgUrl="roundIcon.png" href="#" />
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center text-[20px] font-sans font-bold leading-[23px] pb-[15px] w-[196px] text-[#005555]">
+                  Duis aute irure
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center  text-[16px] font-sans font-normal leading-[19px] pb-[25px] text-[#444444]">
+                  Lorem ipsum dolor sit amet,<br>  consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt <br> ut labore et dolore magna <br>aliqua. Ut enim ad minim <br> veniam.<sup class="text-[8px]">2</sup>
+                </td>                  
+              </tr>
+              
+            </table>
+          </th>
+        </tr>
+    </table> 
+    <!-- two column section  view for  mobile-->
+     <table class="hidden sm:table-cell w=[375px] bg-[#f0f5f5] text-center pb-[25px] px-5 pt-[30px]">
+      <!-- colum 1 -->
+      <tr>
+        <td>
+          <table class="bg-white w-[335px] mx-auto pl-3">
+            <tr class="pb-[25px]">
+               <td class="text-center pt-5  pb-[15px]">
+                <x-image class="w-[100px] h-[100px]" imgUrl="roundIcon.png" href="#" />
+              </td>
+             </tr>
+             <tr>
+             <td class="text-center text-[20px] font-sans font-bold leading-[23px] pb-[15px] w-[196px] text-[#005555]">
+               Nisi ut ade
+             </td>
+             </tr>
+             <tr>
+               <td class="text-center pl-3 text-[16px] font-sans font-normal leading-[19px] pb-[25px] h-[116px] text-[#444444]">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                 <sup class="text-[8px]">1</sup>
+               </td>                  
+             </tr>
+       </table>
+
         </td>
       </tr>
-       <!-- Two-Column Section -->
+      <!-- column 2 -->
+      <tr>
+        <td class="pt-5">
+          <table class="bg-white w-[335px]  mx-auto pl-3">
+            <tr class="pb-[25px]">
+               <td class="text-center  pb-[15px] pt-5">
+                <x-image class="w-[100px] h-[100px]" imgUrl="roundIcon.png" href="#" />
+              </td>
+             </tr>
+             <tr>
+             <td class="text-center text-[20px] font-sans font-bold leading-[23px] pb-[15px] w-[196px] text-[#005555]">
+               Nisi ut ade
+             </td>
+             </tr>
+             <tr>
+              <td class="text-center pl-3 text-[16px] font-sans font-normal leading-[19px] pb-[25px] h-[116px] text-[#444444]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                <sup class="text-[8px]">2</sup>
+              </td>                                
+             </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+         
+      
     </td>
   </tr>
-</table>
+</table> 
